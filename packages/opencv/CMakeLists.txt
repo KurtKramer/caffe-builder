@@ -53,6 +53,8 @@ elseif(MSVC_VERSION EQUAL 1800)
     set(OpenCV_RUNTIME vc12)
 elseif(MSVC_VERSION EQUAL 1900)
     set(OpenCV_RUNTIME vc14)
+elseif(MSVC_VERSION EQUAL 1916)
+    set(OpenCV_RUNTIME vc141)
 endif()
 
 set(OpenCV_RUNTIME ${OpenCV_RUNTIME} PARENT_SCOPE)
